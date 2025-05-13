@@ -3,6 +3,7 @@ from django.urls import path
 from . import views
 # URL configuration for the calculator app
 urlpatterns = [
-    path('', views.normal_cal, name="normal"),  # Include URLs from the calculator app
+    path('', views.home, name="home"),  # Home page
+    path('normal/', views.normal_cal, name="normal"),  # Include URLs from the calculator app
     # Add other app URLs here if needed
 ]

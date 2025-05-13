@@ -20,5 +20,4 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mycalculator.urls')),  # Include URLs from the calculator app
-    # Add other app URLs here if needed
 ]
